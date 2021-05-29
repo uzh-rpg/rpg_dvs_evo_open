@@ -1,0 +1,9 @@
+<library path="libdvs_tracking_nodelet">
+  <class name="dvs_tracking/DvsTrackingNodelet"
+         type="DvsTrackingNodelet"
+         base_class_type="nodelet::Nodelet">
+    <description> 
+      A nodelet wrapper for EVO tracker.
+    </description>
+  </class>
+</library>

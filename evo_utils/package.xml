@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>evo_utils</name>
+  <version>0.0.1</version>
+  <description>
+    Utility scripts for EVO
+  </description>
+  <author>Henri Rebecq</author>
+  <license>tbd</license>
+  <maintainer email="rebecq@ifi.uzh.ch">Henri Rebecq</maintainer>
+  <maintainer email="aterpin@ethz.ch">Antonio Terpin</maintainer>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rospy</depend>
+  <depend>tf</depend>
+  <depend>geometry_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>minkindr</depend>
+  <depend>tf_conversions</depend>
+  <depend>glog_catkin</depend>
+  <depend>gflags_catkin</depend>
+  <depend>dvs_msgs</depend>
+  <depend>camera_info_manager</depend>
+
+  </package>

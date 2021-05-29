@@ -1,0 +1,9 @@
+<library path="libdvs_mapping_nodelet">
+  <class name="dvs_mapping/DvsMappingNodelet"
+         type="depth_from_defocus::DvsMappingNodelet"
+         base_class_type="nodelet::Nodelet">
+    <description> 
+      A nodelet wrapper for EVO tracker.
+    </description>
+  </class>
+</library>

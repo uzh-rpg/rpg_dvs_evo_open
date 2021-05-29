@@ -1,0 +1,4 @@
+#pragma once
+
+#cmakedefine SVO_WITH_CUDA
+#cmakedefine SVO_WITH_PANGOLIN

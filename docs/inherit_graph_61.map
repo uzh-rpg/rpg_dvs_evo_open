@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classsvo_1_1Frame.html" title="A frame saves the image, the associated features and the estimated pose. " alt="" coords="5,5,93,32"/>
+<area shape="rect" id="node2" href="$classsvo_1_1FrameGpu.html" title="The FrameGpu class adds GPU data members to the frame base class. " alt="" coords="141,5,253,32"/>
+</map>

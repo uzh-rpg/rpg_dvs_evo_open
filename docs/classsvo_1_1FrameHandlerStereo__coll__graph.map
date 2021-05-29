@@ -1,0 +1,8 @@
+<map id="svo::FrameHandlerStereo" name="svo::FrameHandlerStereo">
+<area shape="rect" id="node2" href="$classsvo_1_1FrameHandlerBase.html" title="Base class for various VO pipelines. Manages the map and the state machine. " alt="" coords="601,229,764,255"/>
+<area shape="rect" id="node3" href="$classrpg__common_1_1CallbackHost.html" title="rpg_common::CallbackHost\l\&lt; const FrameBundlePtr &amp;\&gt;" alt="" coords="247,5,432,47"/>
+<area shape="rect" id="node4" href="$classvk_1_1RingBuffer.html" title="vk::RingBuffer\&lt; double \&gt;" alt="" coords="255,71,423,98"/>
+<area shape="rect" id="node5" href="$structsvo_1_1BaseOptions.html" title="Options for base frame handler module. Sets tracing and quality options. " alt="" coords="276,229,403,255"/>
+<area shape="rect" id="node7" href="$classvk_1_1RingBuffer.html" title="vk::RingBuffer\&lt; size_t \&gt;" alt="" coords="257,279,422,306"/>
+<area shape="rect" id="node9" href="$classvk_1_1Timer.html" title="vk::Timer" alt="" coords="301,381,378,407"/>
+</map>

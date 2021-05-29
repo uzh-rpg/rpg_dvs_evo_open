@@ -1,0 +1,48 @@
+cameras:
+  - camera:
+      distortion:
+        parameters:
+          cols: 1
+          rows: 4
+          data: [0.0, 0.0, 0.0, 0.0] #[-0.3687369041657594, 0.1635331561185621, 0.0006758841262625439, -0.0014358423311193668, 0.0]
+        type: radial-tangential
+      image_height: 180
+      image_width: 240
+      intrinsics:
+        cols: 1
+        rows: 4
+        data:
+          [
+            197.3158535429064,
+            197.24778002324712,
+            128.19252018028914,
+            110.94875388538058,
+          ]
+      label: cam0
+      line-delay-nanoseconds: 0
+      type: pinhole
+    T_B_C:
+      cols: 4
+      rows: 4
+      data:
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+        ]
+    serial_no: DAVIS-EVO
+    calib_date: 21/05/2021
+label: DAVIS-EVO

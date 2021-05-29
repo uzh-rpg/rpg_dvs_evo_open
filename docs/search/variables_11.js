@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['r',['R',['../structcv_1_1HomographyDecomposition_1_1__CameraMotion.html#aa29316accee94975abdb4fadb3e6b1c5',1,'cv::HomographyDecomposition::_CameraMotion']]],
+  ['r_5fcur_5fworld_5f',['R_cur_world_',['../classsvo_1_1AbstractInitialization.html#a6a50df992c918076ae1ff5e7cb645838',1,'svo::AbstractInitialization']]],
+  ['r_5fimu_5fworld_5f',['R_imu_world_',['../classsvo_1_1Frame.html#a1d17861d1073e693a369b5c7656e1d36',1,'svo::Frame']]],
+  ['radius_5fsearch_5f',['radius_search_',['../classdepth__from__defocus_1_1DepthFromDefocusNode.html#af1033e661af53d8d1f162830f13ef0db',1,'depth_from_defocus::DepthFromDefocusNode']]],
+  ['rect_5f',['rect_',['../classLKSE3.html#a43337685ca3bdc7b78d5ea8a43a435f5',1,'LKSE3']]],
+  ['rectification_5fmap_5f',['rectification_map_',['../classMosaic.html#a93390709e5b74021d5a4edd36d3d6efd',1,'Mosaic']]],
+  ['ref_5fframe',['ref_frame',['../structsvo_1_1Reprojector_1_1Candidate.html#a5df19d5001903e5c271c10813363518a',1,'svo::Reprojector::Candidate']]],
+  ['ref_5fframes_5f',['ref_frames_',['../classsvo_1_1SparseImgAlignBase.html#af3709befd619eded103d3f2f890735a8',1,'svo::SparseImgAlignBase']]],
+  ['ref_5fimg_5f',['ref_img_',['../classLKSE3.html#a8894f0d922f307d4ab06f7c772d098d6',1,'LKSE3']]],
+  ['ref_5findex',['ref_index',['../structsvo_1_1Reprojector_1_1Candidate.html#a47eeb3103e7aff240229251af4c27ea5',1,'svo::Reprojector::Candidate']]],
+  ['ref_5fvoxel_5fgrid_5f',['ref_voxel_grid_',['../classdepth__from__defocus_1_1DepthFromDefocusNode.html#a6d0ad9955f82c132884ac72ec2265002',1,'depth_from_defocus::DepthFromDefocusNode']]],
+  ['regular_5fframe_5fid_5f',['regular_frame_id_',['../classdepth__from__defocus_1_1DepthFromDefocusNode.html#a9b632eb6d82e259230d3cb2bda830539',1,'depth_from_defocus::DepthFromDefocusNode']]],
+  ['relocalization_5fmax_5ftrials',['relocalization_max_trials',['../structsvo_1_1BaseOptions.html#a511f735f4054da8e384ac142f61790fe',1,'svo::BaseOptions']]],
+  ['relocalization_5fn_5ftrials_5f',['relocalization_n_trials_',['../classsvo_1_1FrameHandlerBase.html#aaa0a849e73db01c049e253906bc0518f',1,'svo::FrameHandlerBase']]],
+  ['remote_5fkey_5f',['remote_key_',['../classdepth__from__defocus_1_1DepthFromDefocusNode.html#a39e537b8e2385d06156df91dc1f2e190',1,'depth_from_defocus::DepthFromDefocusNode']]],
+  ['remote_5fkey_5fpub_5f',['remote_key_pub_',['../classdvs__bootstrapping_1_1Bootstrapper.html#a617aa089e6e345edacaee8b9b8266490',1,'dvs_bootstrapping::Bootstrapper']]],
+  ['remote_5fsub_5f',['remote_sub_',['../classdvs__bootstrapping_1_1Bootstrapper.html#a43e4d4fde4163801103a9cce9dd6c3b4',1,'dvs_bootstrapping::Bootstrapper::remote_sub_()'],['../classTracker.html#ade9360c0b7392539943229150027677a',1,'Tracker::remote_sub_()']]],
+  ['remove_5funconstrained_5fpoints',['remove_unconstrained_points',['../structsvo_1_1ReprojectorOptions.html#acb8e4221c1a0904f08b184f64f4b4ad8',1,'svo::ReprojectorOptions']]],
+  ['reproj_5ferror_5fthresh',['reproj_error_thresh',['../structsvo_1_1InitializationOptions.html#ab30047ee7bf4c8c42746d5fae86cef56',1,'svo::InitializationOptions']]],
+  ['reproject_5funconverged_5fseeds',['reproject_unconverged_seeds',['../structsvo_1_1ReprojectorOptions.html#a733c5833f61674a170f3e70f79c479f3',1,'svo::ReprojectorOptions']]],
+  ['reset_5fbefore_5fdetection',['reset_before_detection',['../structsvo_1_1FeatureTrackerOptions.html#a6dba63a8f46d4241a911c52d8f9ed8fe',1,'svo::FeatureTrackerOptions']]],
+  ['rho_5f',['rho_',['../classvk_1_1solver_1_1MiniLeastSquaresSolver.html#aa42970c6659ffbd5483c9c041642f9f2',1,'vk::solver::MiniLeastSquaresSolver']]]
+];

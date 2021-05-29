@@ -1,0 +1,52 @@
+image_width: 240
+image_height: 180
+camera_name: DAVIS-ijrr
+camera_matrix:
+  rows: 3
+  cols: 3
+  data:
+    [
+      199.0923665423112,
+      0.0,
+      132.1920713777002,
+      0.0,
+      198.8288204700886,
+      110.7126600112956,
+      0.0,
+      0.0,
+      1.0,
+    ]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data:
+    [
+      -0.3684363117977873,
+      0.1509472435566583,
+      -0.0002961305343848646,
+      -0.000759431726241032,
+      0.0,
+    ]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data:
+    [
+      168.6294097900391,
+      0.0,
+      135.348079770296,
+      0.0,
+      0.0,
+      178.5641784667969,
+      113.6189973794753,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+    ]

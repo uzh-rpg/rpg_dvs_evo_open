@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classvk_1_1solver_1_1ScaleEstimator.html" title="Scale Estimators to estimate standard deviation of a distribution of errors. " alt="" coords="5,64,181,91"/>
+<area shape="rect" id="node2" href="$classvk_1_1solver_1_1MADScaleEstimator.html" title="vk::solver::MADScaleEstimator" alt="" coords="229,5,436,32"/>
+<area shape="rect" id="node3" href="$classvk_1_1solver_1_1NormalDistributionScaleEstimator.html" title="vk::solver::NormalDistribution\lScaleEstimator" alt="" coords="235,57,430,98"/>
+<area shape="rect" id="node4" href="$classvk_1_1solver_1_1UnitScaleEstimator.html" title="vk::solver::UnitScaleEstimator" alt="" coords="233,123,433,149"/>
+</map>

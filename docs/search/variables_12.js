@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['sampling_5flevel',['sampling_level',['../structsvo_1_1DetectorOptions.html#a885970f445b208ec6412d8244126ed7e',1,'svo::DetectorOptions']]],
+  ['saturation_5faccel_5fmax',['saturation_accel_max',['../classsvo_1_1ImuCalibration.html#a32d0696e3ee54f6c8be8f4cb742d9ca4',1,'svo::ImuCalibration']]],
+  ['saturation_5fomega_5fmax',['saturation_omega_max',['../classsvo_1_1ImuCalibration.html#a1d86f9ebf7a9eded44a226b9310297ac',1,'svo::ImuCalibration']]],
+  ['scan_5fepi_5funit_5fsphere',['scan_epi_unit_sphere',['../structsvo_1_1DepthFilterOptions.html#ae7f876587424af58ecc1ea2d935f78d9',1,'svo::DepthFilterOptions']]],
+  ['score',['score',['../structsvo_1_1Reprojector_1_1Candidate.html#a88f8dfa15b4cd42b1de12d3a22f2fdef',1,'svo::Reprojector::Candidate::score()'],['../structsvo_1_1Corner.html#af63792f2b337df952c8b8bdea84cf12e',1,'svo::Corner::score()']]],
+  ['score_5fvec_5f',['score_vec_',['../classsvo_1_1Frame.html#ac2788e7b975245189b3058718748facb',1,'svo::Frame']]],
+  ['seed_5fconvergence_5fsigma2_5fthresh',['seed_convergence_sigma2_thresh',['../structsvo_1_1DepthFilterOptions.html#a594f7085ecee05fdeaa42bcf85dec61c',1,'svo::DepthFilterOptions']]],
+  ['seed_5fref_5fvec_5f',['seed_ref_vec_',['../classsvo_1_1Frame.html#a78fb662e02b5d690d0ec5aff180c3b95',1,'svo::Frame']]],
+  ['sensor_5fsize',['sensor_size',['../classmotion__correction_1_1WarpUpdateParams.html#a526331c824445d1998abceb0e9e0d1f1',1,'motion_correction::WarpUpdateParams']]],
+  ['set_5freset_5f',['set_reset_',['../classsvo_1_1FrameHandlerBase.html#a4d5da447318a37a2569f360a799bc795',1,'svo::FrameHandlerBase']]],
+  ['set_5fstart_5f',['set_start_',['../classsvo_1_1FrameHandlerBase.html#a8feb15626100f7ef0adccd1d412596ad',1,'svo::FrameHandlerBase']]],
+  ['stage_5f',['stage_',['../classsvo_1_1FrameHandlerBase.html#a892e230faa0a3073ed05b363968ebe98',1,'svo::FrameHandlerBase']]],
+  ['state_5f',['state_',['../classdepth__from__defocus_1_1DepthFromDefocusNode.html#a0dd83f7db94b2615d40a03892dcdcbe0',1,'depth_from_defocus::DepthFromDefocusNode']]],
+  ['status_5f',['status_',['../structvk_1_1cameras_1_1ProjectionResult.html#adcf5d28419673b529bf333ecb99d4706',1,'vk::cameras::ProjectionResult']]],
+  ['stop_5f',['stop_',['../classvk_1_1solver_1_1MiniLeastSquaresSolver.html#a858e23e3a958664ddddab82ccfb449e2',1,'vk::solver::MiniLeastSquaresSolver']]],
+  ['stop_5fwhen_5ferror_5fincreases',['stop_when_error_increases',['../structvk_1_1solver_1_1MiniLeastSquaresSolverOptions.html#ae9fa71721aabd7c61a7aa12c3016c10b',1,'vk::solver::MiniLeastSquaresSolverOptions']]],
+  ['strategy',['strategy',['../structvk_1_1solver_1_1MiniLeastSquaresSolverOptions.html#adb29120cb696f83a2a1efa95feca3464',1,'vk::solver::MiniLeastSquaresSolverOptions']]],
+  ['structure_5foptimization_5fmax_5fpts',['structure_optimization_max_pts',['../structsvo_1_1BaseOptions.html#a512051ee55420bcb60e6441dfed45225',1,'svo::BaseOptions']]],
+  ['subpix_5frefinement',['subpix_refinement',['../structsvo_1_1Matcher_1_1Options.html#a28337eefd24e5ca13f42c234245090cb',1,'svo::Matcher::Options']]]
+];

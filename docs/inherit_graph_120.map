@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classvk_1_1solver_1_1MiniLeastSquaresSolver.html" title="vk::solver::MiniLeastSquares\lSolver\&lt; 8, SparseImgAlignState,\l SparseImgAlignBase \&gt;" alt="" coords="5,16,219,72"/>
+<area shape="rect" id="node2" href="$classsvo_1_1SparseImgAlignBase.html" title="Optimize the pose of the frame by minimizing the photometric error of feature patches. " alt="" coords="267,31,440,57"/>
+<area shape="rect" id="node3" href="$classsvo_1_1SparseImgAlign.html" title="Optimize the pose of the frame by minimizing the photometric error of feature patches. " alt="" coords="500,5,643,32"/>
+<area shape="rect" id="node4" href="$classsvo_1_1SparseImgAlignGpu.html" title="Optimize the pose of the frame by minimizing the photometric error of feature patches. " alt="" coords="488,56,655,83"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="vk::solver::WeightFunction" name="vk::solver::WeightFunction">
+<area shape="rect" id="node2" href="$classvk_1_1solver_1_1HuberWeightFunction.html" title="vk::solver::HuberWeightFunction" alt="" coords="233,5,446,32"/>
+<area shape="rect" id="node3" href="$classvk_1_1solver_1_1TukeyWeightFunction.html" title="vk::solver::TukeyWeightFunction" alt="" coords="232,56,447,83"/>
+<area shape="rect" id="node4" href="$classvk_1_1solver_1_1UnitWeightFunction.html" title="vk::solver::UnitWeightFunction" alt="" coords="238,107,441,133"/>
+</map>

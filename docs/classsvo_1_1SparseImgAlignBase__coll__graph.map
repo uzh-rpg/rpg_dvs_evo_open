@@ -1,0 +1,6 @@
+<map id="svo::SparseImgAlignBase" name="svo::SparseImgAlignBase">
+<area shape="rect" id="node2" href="$classvk_1_1solver_1_1MiniLeastSquaresSolver.html" title="vk::solver::MiniLeastSquares\lSolver\&lt; 8, SparseImgAlignState,\l SparseImgAlignBase \&gt;" alt="" coords="507,129,720,185"/>
+<area shape="rect" id="node3" href="$structvk_1_1solver_1_1MiniLeastSquaresSolverOptions.html" title="vk::solver::MiniLeastSquares\lSolverOptions" alt="" coords="172,78,363,119"/>
+<area shape="rect" id="node7" href="$structsvo_1_1SparseImgAlignState.html" title="State to be estimated. " alt="" coords="180,255,355,281"/>
+<area shape="rect" id="node8" href="$structsvo_1_1SparseImgAlignOptions.html" title="Sparse Image Alignment Options. " alt="" coords="519,209,707,236"/>
+</map>

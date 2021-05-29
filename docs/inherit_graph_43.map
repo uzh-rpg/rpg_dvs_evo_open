@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classsvo_1_1AbstractDetector.html" title="All detectors should derive from this abstract class. " alt="" coords="5,183,156,209"/>
+<area shape="rect" id="node2" href="$classsvo_1_1AllPixelsDetector.html" title="Dummy detector that selects all pixels. " alt="" coords="223,5,375,32"/>
+<area shape="rect" id="node3" href="$classsvo_1_1CannyDetector.html" title="svo::CannyDetector" alt="" coords="229,56,368,83"/>
+<area shape="rect" id="node4" href="$classsvo_1_1FastDetector.html" title="FAST detector by Edward Rosten. " alt="" coords="235,107,362,133"/>
+<area shape="rect" id="node5" href="$classsvo_1_1FastGradDetector.html" title="svo::FastGradDetector" alt="" coords="221,157,376,184"/>
+<area shape="rect" id="node6" href="$classsvo_1_1GradientDetector.html" title="svo::GradientDetector" alt="" coords="223,208,374,235"/>
+<area shape="rect" id="node7" href="$classsvo_1_1GradientDetectorGrid.html" title="svo::GradientDetectorGrid" alt="" coords="211,259,386,285"/>
+<area shape="rect" id="node8" href="$classsvo_1_1GradientHuangMumfordDetector.html" title="svo::GradientHuangMumford\lDetector" alt="" coords="204,310,393,351"/>
+<area shape="rect" id="node9" href="$classsvo_1_1SobelDetector.html" title="svo::SobelDetector" alt="" coords="231,376,366,403"/>
+</map>

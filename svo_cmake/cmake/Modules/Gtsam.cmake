@@ -1,0 +1,10 @@
+FIND_PACKAGE(gtsam_catkin QUIET)
+
+IF(${gtsam_catkin_FOUND})
+  MESSAGE("GTSAM found: ${gtsam_catkin_LIBRARIES}.")
+  ADD_DEFINITIONS(-DSVO_USE_GTSAM)
+  LIST(APPEND LINK_LIBS  ${gtsam_catkin_LIBRARIES})
+  LIST(APPEND INCLUDE_DIRS ${gtsam_catkin_INCLUDE_DIRS})
+ELSE()
+  MESSAGE("GTSAM not found.")
+ENDIF()

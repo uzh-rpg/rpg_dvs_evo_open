@@ -1,0 +1,12 @@
+<library path="src">
+  <class name="Evo" type="rqt_evo.evo.Evo" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      Plugin for EVO
+    </description>
+    <qtgui>
+      <label>Evo</label>
+      <icon type="theme">system-help</icon>
+      <statustip>Great user interface to manipulate the EVO demo.</statustip>
+    </qtgui>
+  </class>
+</library>

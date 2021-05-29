@@ -1,0 +1,5 @@
+<map id="svo::dataset::MeasurementBase" name="svo::dataset::MeasurementBase">
+<area shape="rect" id="node2" href="$structsvo_1_1dataset_1_1CameraMeasurement.html" title="svo::dataset::CameraMeasurement" alt="" coords="264,5,491,32"/>
+<area shape="rect" id="node3" href="$structsvo_1_1dataset_1_1FeatureTrackMeasurement.html" title="svo::dataset::FeatureTrack\lMeasurement" alt="" coords="288,57,467,98"/>
+<area shape="rect" id="node4" href="$structsvo_1_1dataset_1_1ImuMeasurement.html" title="svo::dataset::ImuMeasurement" alt="" coords="276,123,479,149"/>
+</map>

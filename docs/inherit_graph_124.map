@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classvk_1_1solver_1_1WeightFunction.html" title="vk::solver::WeightFunction" alt="" coords="5,56,184,83"/>
+<area shape="rect" id="node2" href="$classvk_1_1solver_1_1HuberWeightFunction.html" title="vk::solver::HuberWeightFunction" alt="" coords="233,5,446,32"/>
+<area shape="rect" id="node3" href="$classvk_1_1solver_1_1TukeyWeightFunction.html" title="vk::solver::TukeyWeightFunction" alt="" coords="232,56,447,83"/>
+<area shape="rect" id="node4" href="$classvk_1_1solver_1_1UnitWeightFunction.html" title="vk::solver::UnitWeightFunction" alt="" coords="238,107,441,133"/>
+</map>

@@ -1,0 +1,9 @@
+repositories:
+  gtsam:
+    type: git
+    url: git@github.com:uzh-rpg/gtsam.git
+    version: develop
+  gtsam_catkin:
+    type: git
+    url: git@github.com:ethz-asl/gtsam_catkin.git
+    version: master

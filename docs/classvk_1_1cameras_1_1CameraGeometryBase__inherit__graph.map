@@ -1,0 +1,7 @@
+<map id="vk::cameras::CameraGeometryBase" name="vk::cameras::CameraGeometryBase">
+<area shape="rect" id="node2" href="$classvk_1_1cameras_1_1CameraGeometry.html" title="vk::cameras::CameraGeometry\l\&lt; EquidistantFisheyeProjection \&gt;" alt="" coords="288,5,503,47"/>
+<area shape="rect" id="node4" href="$classvk_1_1cameras_1_1CameraGeometry.html" title="vk::cameras::CameraGeometry\l\&lt; OmniProjection \&gt;" alt="" coords="293,71,498,112"/>
+<area shape="rect" id="node6" href="$classvk_1_1cameras_1_1CameraGeometry.html" title="vk::cameras::CameraGeometry\l\&lt; Projection \&gt;" alt="" coords="293,136,498,177"/>
+<area shape="rect" id="node3" href="$classvk_1_1cameras_1_1EquidistantFisheyeGeometry.html" title="vk::cameras::Equidistant\lFisheyeGeometry" alt="" coords="563,5,729,47"/>
+<area shape="rect" id="node5" href="$classvk_1_1cameras_1_1OmniGeometry.html" title="vk::cameras::OmniGeometry" alt="" coords="551,78,741,105"/>
+</map>

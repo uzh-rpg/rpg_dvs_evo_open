@@ -1,0 +1,48 @@
+cameras:
+  - camera:
+      distortion:
+        parameters:
+          cols: 1
+          rows: 4
+          data: [0.0, 0.0, 0.0, 0.0] #[-0.3684363117977873, 0.1509472435566583, -0.0002961305343848646, -0.000759431726241032]
+        type: radial-tangential
+      image_height: 180
+      image_width: 240
+      intrinsics:
+        cols: 1
+        rows: 4
+        data:
+          [
+            199.0923665423112,
+            198.8288204700886,
+            132.1920713777002,
+            110.7126600112956,
+          ]
+      label: cam0
+      line-delay-nanoseconds: 0
+      type: pinhole
+    T_B_C:
+      cols: 4
+      rows: 4
+      data:
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+        ]
+    serial_no: DAVIS-IJRR
+    calib_date: 02/10/2017
+label: DAVIS-IJRR

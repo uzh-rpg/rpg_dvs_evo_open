@@ -1,0 +1,170 @@
+<launch>
+    <arg name="auto_trigger" default="true"/>
+
+    <arg name="camera_name" default="DAVIS-evo" />
+    <arg name="bootstrap_image_topic" default="/events/image_raw" />
+    <arg name="events_topic" default="/dvs/events" />
+
+    <param name="camera_name" value="$(arg camera_name)" />
+    <param name="calib_file" value="$(find dvs_tracking)/parameters/calib/$(arg camera_name).yaml" />
+
+    <remap from="events" to="$(arg events_topic)" />
+    <remap from="remote_key" to="/evo/remote_key" />
+
+    <param name="world_frame_id" value="/world"/>
+    <param name="dvs_bootstrap_frame_id" value="/camera_0" />
+    <param name="dvs_frame_id" value="/dvs_evo" />
+
+    <!-- <remap from="camera_info" to="/dvs/camera_info" /> -->
+
+    <param name="min_depth" value="0.4" />
+    <param name="max_depth" value="5" />
+    <param name="num_depth_cells" value="100" />
+    
+    <!-- Angle of view of the DSI (cone) -->
+    <param name="fov_virtual_camera_deg" value="80.0" />
+    
+    <!-- Number of horizontal/vertical pixels in the DSI -->
+    <param name="virtual_width" value="240" />
+    <param name="virtual_height" value="180" />
+
+    <!-- SVO -->
+    <node pkg="svo_ros" type="svo_node" name="svo" clear_params="true" output="screen" >
+        <param name="cam0_topic" value="$(arg bootstrap_image_topic)" type="str" />
+        <param name="calib_file" value="$(find dvs_tracking)/parameters/calib/ncamera/$(arg camera_name).yaml" />
+        <rosparam file="$(find dvs_tracking)/parameters/svo_flyingroom.yaml" />
+        <param name="runlc" value="false" />
+    </node>
+    <node name="svo_gui" pkg="rqt_gui" type="rqt_gui" args="-s rqt_svo.svo.Svo --args --topic svo" />
+
+    <!-- Publish SVO pose to tf frame "dvs_bootstrap_frame_id" -->
+    <node name="pose_to_tf" pkg="dvs_bootstrapping" type="pose_to_tf.py" output="screen">
+        <param name="source_topic_name" value="/svo/pose_cam/0" />
+        <param name="relative_to_first_pose" value="false" />
+    </node>
+
+    <!-- Mapping -->
+    <node name="dvs_mapping" pkg="dvs_mapping" type="dvs_mapping_ros" output="screen">
+        <param name="adaptive_threshold_kernel_size" value="5" />
+        <param name="adaptive_threshold_c" value="7" />
+        <param name="voxel_filter_leaf_size" value="0.01" />
+        <param name="type_focus_measure" value="0" />
+        <param name="half_patchsize" value="1" />
+        <param name="median_filter_size" value="15" />
+        <param name="events_to_recreate_kf" value="1000000" />
+        <param name="skip_batches" value="0" />
+        <param name="radius_search" value="0.2" />
+        <param name="min_num_neighbors" value="2" />
+        <param name="min_batch_size" value="20000" />
+        <param name="frame_size" value="2048" />
+
+        <param name="min_num_neighbors_global_map" value="2"/>
+        <param name="radius_search_global_map" value=".05"/>
+        <param name="accumulate_local_map_once_every" value="25"/>
+        <param name="global_point_cloud_skip_first" value="15"/>
+        
+        <param name="auto_trigger" value="$(arg auto_trigger)"/>
+    </node>
+
+    <!-- Map expansion -->
+    <node name="trigger_map_expansion" pkg="dvs_mapping" type="trigger_map_expansion.py" output="screen" >
+        <remap from="remote_key" to="evo/remote_key" />
+        <remap from="pointcloud" to="dvs_mapping/pointcloud" />
+
+        <param name="visibility_threshold" value="0.9" />
+        <param name="coverage_threshold" value="0.4" />
+        <param name="baseline_threshold" value="0.1" />
+        <param name="rate" value="3" />
+        <param name="number_of_initial_maps_to_skip" value="0"/>
+    </node>
+
+    <!-- Tracking -->
+    <node name="dvs_tracking" pkg="dvs_tracking" type="dvs_tracking_ros" required="true" output="screen">
+        <param name="discard_events_when_idle" value="true"/>
+        <param name="batch_size"        value="500" />
+        <param name="max_iterations"    value="200" />
+        <param name="pyramid_levels"    value="2" />
+        <param name="weight_scale"   value="1." />
+        <param name="map_blur"          value="3" />
+        <param name="noise_rate"        value="10000" />
+        <param name="frame_size"       value="5000" />
+        <param name="step_size"        value="10000" />
+        <param name="max_event_rate" value="4000000" />
+        <param name="pose_mean_filter_size"    value="5" />
+        <param name="events_per_kf"  value="100000" />
+        <param name="event_map_overlap_rate" value="15" />
+
+        <param name="min_map_size" value="200"/>
+        <param name="min_n_keypoints" value="2000"/>
+
+        <param name="auto_trigger" value="$(arg auto_trigger)"/>
+        <remap from="pointcloud" to="dvs_mapping/pointcloud" />
+    </node>
+
+    <!-- Bootstrapping -->
+    <!-- <node name="dvs_bootstrapping" pkg="dvs_bootstrapping" type="dvs_bootstrapping_frontoplanar_ros" output="screen">
+        <param name="plane_distance" value="1"/>
+        <remap from="pointcloud" to="dvs_mapping/pointcloud" />
+        <param name="one_shot" value="true" />
+        <param name="radius_search" value="0.1" />
+        <param name="min_num_neighbors" value="50" /> -->
+    <node name="dvs_bootstrapping" pkg="dvs_bootstrapping" type="dvs_bootstrapping_ef_ros" output="screen">
+        <param name="rate_hz" value="30" />
+        
+        <param name="frame_size" value="15000" />
+        <param name="local_frame_size" value="5000"/>
+        <!-- <param name="frame_size" value="20000" />
+        <param name="local_frame_size" value="7500"/> -->
+        <param name="min_step_size" value="15000"/>
+        <param name="events_offset" value="0"/>
+        <param name="events_scale_factor" value="4.0" />
+        <param name="motion_corrected_topic" value="/events/image_raw"/>
+        <param name="optical_flow_topic" value="/evo/bootstrap/optical_flow"/>
+        
+        <param name="enable_visualizations" value="true"/>
+        <param name="unwarp_estimate_n_it" value="75"/>
+        <param name="unwarp_estimate_eps" value="0.0001"/>
+        <param name="unwarp_estimate_pyramid_lvls" value="2"/>
+
+        <param name="median_filtering" value="false"/>
+        <param name="median_filter_size" value="1" />
+        <param name="adaptive_thresholding" value="true"/>
+        <param name="activation_threshold_patch_size" value="13"/>
+        <param name="activation_threshold_min" value="10"/>
+
+        <param name="auto_trigger" value="true"/>
+    </node>
+
+    <!-- Image reconstruction -->
+    <!-- 
+    <node name="dvs_reconstruction"  pkg="dvs_reconstruction" type="dvs_reconstruction_ros" required="false" output="screen">
+        <param name="window_size" value="5000" />
+        <param name="sigma_m"    value="10.0" />
+        <param name="init_cov"   value="10.0" />
+        <param name="map_blur"   value="15" />
+	    <remap from="map" to="dvs_mapping/pointcloud" />
+    </node> 
+     -->
+    <node name="tf_to_camera_marker" pkg="evo_utils" type="tf_to_camera_markers.py" output="screen" >
+      <param name="marker_scale" value="0.2" />
+    </node>
+    
+    <node name="snakify" pkg="evo_utils" type="snakify.py" output="screen" >
+      <param name="length" value="100000" />
+    </node>
+    
+    <node name="rqt_evo" pkg="rqt_evo" type="rqt_evo"></node> 
+    
+    <!-- visualization -->
+    <node name="dvs_renderer_left" pkg="dvs_renderer" type="dvs_renderer" output="screen">
+        <param name="display_method" value="red-blue"/>
+        <remap from="events" to="/dvs/events" />
+        <remap from="dvs_rendering" to="dvs_rendering" />
+    </node>
+
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find dvs_tracking)/rviz/rosbag.rviz" />
+    
+</launch>
+
+
+

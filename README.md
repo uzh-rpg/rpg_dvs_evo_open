@@ -76,22 +76,20 @@ This software depends on [ROS](https://www.ros.org/). Installation instructions 
         
         ./rpg_dvs_evo_open/install.sh [ros-version] # [ros-version]: melodic, ..
 
+    Substitute `[ros-version]` with your actual ROS distribution. For instance:
+
+        ./rpg_dvs_evo_open/install.sh melodic
+
+    Make sure to install ROS and the commonly used packages (such as rviz, rqt, ..).
+
     The above commands do the following:
-    * First, we install the required packages. Namely,
-        
-        | Package | Reason |
-        | ----- | ----- |
-        | ros-[ros-version]-sophus | Lie groups |
-        | ros-[ros-version]-pcl-ros | bridge between point clouds and 3D geometry processing in ros|
-        | ros-[ros-version]-eigen-conversions | Eigen data structures to ros geometry messages |
-        | libfftw3-dev, libfftw3-doc | fast fourier transform|
-        | libglew-dev |  determining which OpenGL extensions are supported (svo) |
-        | libopencv-dev | opencv|
-        | libyaml-cpp-dev| yaml |
+    * First, we install the required packages.
 
     * Second, we clone the [repositories](dependencies.yaml) evo relies on.
 
     Remark that with the above commands we install also the dependencies required to run the pipeline live. If you do not need them, you can comment the unnecessary packages from the dependencies.yaml file ([davis driver](https://github.com/uzh-rpg/rpg_dvs_ros)).
+
+    Please refer to [this repo](https://github.com/uzh-rpg/rpg_dvs_ros) if there are issues with the driver installation (required for the live).
 
 4. Build the packages
     

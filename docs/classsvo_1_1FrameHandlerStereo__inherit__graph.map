@@ -1,0 +1,4 @@
+<map id="svo::FrameHandlerStereo" name="svo::FrameHandlerStereo">
+<area shape="rect" id="node2" href="$classsvo_1_1FrameHandlerBase.html" title="Base class for various VO pipelines. Manages the map and the state machine. " alt="" coords="17,95,179,121"/>
+<area shape="rect" id="node3" href="$classrpg__common_1_1CallbackHost.html" title="rpg_common::CallbackHost\l\&lt; const FrameBundlePtr &amp;\&gt;" alt="" coords="5,5,191,47"/>
+</map>

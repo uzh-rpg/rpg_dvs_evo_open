@@ -1,0 +1,5 @@
+<map id="svo::BackendInterface" name="svo::BackendInterface">
+<area shape="rect" id="node2" href="$classsvo_1_1AbstractBundleAdjustment.html" title="EXPERIMENTAL Defines interface for various bundle adjustment methods. " alt="" coords="5,124,212,151"/>
+<area shape="rect" id="node3" href="$structsvo_1_1BackendInterfaceOptions.html" title="svo::BackendInterfaceOptions" alt="" coords="443,124,641,151"/>
+<area shape="rect" id="node5" href="$classsvo_1_1ViNodeState.html" title="svo::ViNodeState" alt="" coords="666,124,791,151"/>
+</map>

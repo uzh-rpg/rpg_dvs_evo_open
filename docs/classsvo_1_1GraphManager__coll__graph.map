@@ -1,0 +1,4 @@
+<map id="svo::GraphManager" name="svo::GraphManager">
+<area shape="rect" id="node2" href="$classgtsam_1_1FastMap.html" title="gtsam::FastMap\&lt; int,\l std::pair\&lt; boost::shared\l_ptr\&lt; SmartFactor \&gt;, int \&gt; \&gt;" alt="" coords="5,5,192,61"/>
+<area shape="rect" id="node3" href="$structsvo_1_1GraphManagerOptions.html" title="svo::GraphManagerOptions" alt="" coords="8,85,189,112"/>
+</map>

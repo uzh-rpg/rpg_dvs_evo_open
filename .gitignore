@@ -1,0 +1,6 @@
+CMakeLists.txt.user
+*.pyc
+*.blend
+html
+latex
+.vscode

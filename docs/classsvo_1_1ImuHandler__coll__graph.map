@@ -1,0 +1,4 @@
+<map id="svo::ImuHandler" name="svo::ImuHandler">
+<area shape="rect" id="node3" href="$classsvo_1_1ImuCalibration.html" title="Settings for the IMU statistics Check the following references for more information about the IMU par..." alt="" coords="107,125,242,152"/>
+<area shape="rect" id="node4" href="$classsvo_1_1ImuInitialization.html" title="svo::ImuInitialization" alt="" coords="266,125,409,152"/>
+</map>

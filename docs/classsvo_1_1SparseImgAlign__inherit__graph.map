@@ -1,0 +1,4 @@
+<map id="svo::SparseImgAlign" name="svo::SparseImgAlign">
+<area shape="rect" id="node2" href="$classsvo_1_1SparseImgAlignBase.html" title="Optimize the pose of the frame by minimizing the photometric error of feature patches. " alt="" coords="25,109,199,136"/>
+<area shape="rect" id="node3" href="$classvk_1_1solver_1_1MiniLeastSquaresSolver.html" title="vk::solver::MiniLeastSquares\lSolver\&lt; 8, SparseImgAlignState,\l SparseImgAlignBase \&gt;" alt="" coords="5,5,219,61"/>
+</map>

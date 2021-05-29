@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>dvs_reconstruction</name>
+  <version>0.0.1</version>
+  <description>
+    Implementation of DVS Reconstruction
+  </description>
+  <author>Timo Horstschaefer</author>
+  <license>tbd</license>
+  <maintainer email="mail@timo-horstschaefer.de">Timo Horstschaefer</maintainer>
+  <maintainer email="aterpin@ethz.ch">Antonio Terpin</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+
+  <depend>cv_bridge</depend>
+  <depend>glog_catkin</depend>
+  <depend>gflags_catkin</depend>
+  <depend>image_geometry</depend>
+  <depend>camera_info_manager</depend>
+  <depend>pcl_ros</depend>
+  <depend>tf_conversions</depend>
+  <depend>eigen_conversions</depend>
+  <depend>image_transport</depend>
+  <depend>dvs_msgs</depend>
+  <depend>dvs_slam_msgs</depend>
+  <depend>evo_utils</depend>
+  
+
+  </package>

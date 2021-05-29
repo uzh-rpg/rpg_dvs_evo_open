@@ -1,0 +1,6 @@
+<map id="svo::FrameHandlerBase" name="svo::FrameHandlerBase">
+<area shape="rect" id="node3" href="$classsvo_1_1FrameHandlerArray.html" title="svo::FrameHandlerArray" alt="" coords="5,169,169,196"/>
+<area shape="rect" id="node4" href="$classsvo_1_1FrameHandlerMono.html" title="svo::FrameHandlerMono" alt="" coords="194,169,359,196"/>
+<area shape="rect" id="node5" href="$classsvo_1_1FrameHandlerStereo.html" title="svo::FrameHandlerStereo" alt="" coords="383,169,554,196"/>
+<area shape="rect" id="node2" href="$classrpg__common_1_1CallbackHost.html" title="rpg_common::CallbackHost\l\&lt; const FrameBundlePtr &amp;\&gt;" alt="" coords="184,5,369,47"/>
+</map>

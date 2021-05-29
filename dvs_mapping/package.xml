@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>dvs_mapping</name>
+  <version>0.0.1</version>
+  <description>
+    Implementation of "Event-based Multi-View-Stereo"
+  </description>
+  <author>Henri Rebecq</author>
+  <license>tbd</license>
+  <maintainer email="rebecq@ifi.uzh.ch">Henri Rebecq</maintainer>
+  <maintainer email="aterpin@ethz.ch">Antonio Terpin</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+
+  <depend>dvs_msgs</depend>
+  <depend>nodelet</depend>
+  <depend>glog_catkin</depend>
+  <depend>gflags_catkin</depend>
+  <depend>minkindr</depend>
+  <depend>minkindr_conversions</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_geometry</depend>
+  <depend>image_transport</depend>
+  <depend>camera_info_manager</depend>
+  <depend>pcl_ros</depend>
+  <depend>tf_conversions</depend>
+  <depend>dvs_slam_msgs</depend>
+  <depend>evo_utils</depend>
+
+  <export>
+    <nodelet plugin="${prefix}/dvs_mapping_nodelet.xml"/>
+  </export>
+
+  </package>

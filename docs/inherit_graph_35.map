@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classrpg__common_1_1CallbackHost.html" title="rpg_common::CallbackHost\l\&lt; const FrameBundlePtr &amp;\&gt;" alt="" coords="5,49,191,90"/>
+<area shape="rect" id="node2" href="$classsvo_1_1FrameHandlerBase.html" title="Base class for various VO pipelines. Manages the map and the state machine. " alt="" coords="239,56,401,83"/>
+<area shape="rect" id="node3" href="$classsvo_1_1FrameHandlerArray.html" title="svo::FrameHandlerArray" alt="" coords="453,5,617,32"/>
+<area shape="rect" id="node4" href="$classsvo_1_1FrameHandlerMono.html" title="svo::FrameHandlerMono" alt="" coords="452,56,617,83"/>
+<area shape="rect" id="node5" href="$classsvo_1_1FrameHandlerStereo.html" title="svo::FrameHandlerStereo" alt="" coords="449,107,620,133"/>
+</map>
