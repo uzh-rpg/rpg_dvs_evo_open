@@ -127,11 +127,11 @@ where the specific launch file (fine-tuned) for each example is listed in the fo
 
 Then, once the everything is loaded, run the rosbag as
 
-    rosbag play [rosbag-file]
+    rosbag play -r 0.7 [rosbag-file]
 
 For instance,
 
-    rosbag play /tmp/evo_flyingroom.bag
+    rosbag play -r 0.7 /tmp/evo_flyingroom.bag
 
 Remark that we set the ```auto_trigger``` parameter to true. You can also set it to false and follow the instruction on [how to run it live](#live).
 
