@@ -14,7 +14,11 @@ sudo apt-get install            \
     libglew-dev                 \
     libopencv-dev               \
     libyaml-cpp-dev             \
-    python-catkin-tools         
+    python-catkin-tools         \
+    ros-$1-camera-info-manager  \
+    ros-$1-image-geometry
+
+
 
 echo "Second, we clone the evo dependencies"
 vcs-import < rpg_dvs_evo_open/dependencies.yaml
