@@ -360,7 +360,7 @@ void GradientHuangMumfordDetector::detect(
   cv::Mat mag_level_32f = mag_pyr_32f[options_.sampling_level];
   cv::Mat mag_level_thresholded;
   cv::threshold(mag_level_32f, mag_level_thresholded, options_.threshold_primary,
-                1.0, CV_THRESH_BINARY_INV);
+                1.0, cv::THRESH_BINARY_INV);
   const int max_num_features = cv::countNonZero(mag_level_thresholded==1.0);
 
 #if 0

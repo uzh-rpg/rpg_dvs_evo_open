@@ -69,7 +69,7 @@ struct CameraMeasurement : public MeasurementBase
 
   cv::Mat getImage() const
   {
-    cv::Mat image = cv::imread(image_path_filename, CV_LOAD_IMAGE_GRAYSCALE);
+    cv::Mat image = cv::imread(image_path_filename, cv::IMREAD_GRAYSCALE);
     CHECK_NOTNULL(image.data);
     return image;
   }

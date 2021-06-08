@@ -326,7 +326,7 @@ void Tracker::publishMapOverlapThread() {
             cv::Vec3b c = cmap.at<cv::Vec3b>(
                 std::min(255., std::max(255. * (1. / z - z0) / z_range, 0.)));
             cv::circle(img, cv::Point(x, y), 2, cv::Scalar(c[0], c[1], c[2]),
-                       -1, CV_AA, 1);
+                       -1, cv::LINE_AA, 1);
         }
 
         std_msgs::Header header;
