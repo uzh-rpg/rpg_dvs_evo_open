@@ -648,7 +648,7 @@ void detectSobelEdges(
   cv::addWeighted( abs_grad_x, 0.5, abs_grad_y, 0.5, 0, dest );
 
   cv::threshold(dest, dest, low_threshold,
-      255, CV_THRESH_BINARY);
+      255, cv::THRESH_BINARY);
 }
 
 //------------------------------------------------------------------------------
