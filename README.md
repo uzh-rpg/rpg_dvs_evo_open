@@ -3,7 +3,7 @@
 [![EVO: Event based Visual Odometry](images/preview-yt.png)](https://www.youtube.com/watch?v=bYqD2qZJlxE)
 
 <a name="license"></a>
-## License, patent and credits
+## Credit, License, and Patent
 ### Citation
 This code implements the event-based visual odometry pipeline described in the paper [EVO: A Geometric Approach to Event-Based 6-DOF Parallel Tracking and Mapping in Real-time](http://rpg.ifi.uzh.ch/docs/RAL16_EVO.pdf) by [Henri Rebecq](https://supitalp.github.io/research/), Timo Horstschaefer, [Guillermo Gallego](https://sites.google.com/view/guillermogallego) and [Davide Scaramuzza](http://rpg.ifi.uzh.ch/people_scaramuzza.html).
 
