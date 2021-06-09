@@ -32,8 +32,17 @@ If you use any of this code, please cite the following publications:
 }
 ```
 
-If you don't have an event camera, you can generate an artificial dataset using the above work.
-
+If you don't have an event camera, you can do one of the following:
+* Using one of our event camera datasets:
+  * http://rpg.ifi.uzh.ch/davis_data.html
+  * https://dsec.ifi.uzh.ch/
+  * https://fpv.ifi.uzh.ch/
+  * http://rpg.ifi.uzh.ch/E2VID.html
+  * http://rpg.ifi.uzh.ch/CED.html
+  * http://rpg.ifi.uzh.ch/direct_event_camera_tracking/index.html
+  * http://rpg.ifi.uzh.ch/ECCV18_stereo_davis.html
+* Generate one using event-camera simulator: http://rpg.ifi.uzh.ch/esim/index.html
+* Convert a standard video to events using our "Video to Events: Recycling Video Datasets for Event Cameras." cited above, code here: https://github.com/uzh-rpg/rpg_vid2e
 ### Patent & License
 
 - The proposed EVO method is [patented](https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2018037079).
