@@ -32,7 +32,7 @@ If you use any of this code, please cite the following publications:
 }
 ```
 
-If you don't have an event camera, you can do one of the following:
+The code comes with a test dataset. If you don't have an event camera and want to run on more data, you can do one of the following:
 * Using one of our event camera datasets:
   * http://rpg.ifi.uzh.ch/davis_data.html
   * https://dsec.ifi.uzh.ch/
