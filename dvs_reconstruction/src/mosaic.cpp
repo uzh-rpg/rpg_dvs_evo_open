@@ -287,9 +287,9 @@ void Mosaic::update(const cv::Mat &new_grad, const ros::Time &t0,
 
     for (size_t y = 0; y != h_virt_; ++y)
         for (size_t x = 0; x != w_virt_; ++x) {
-            const Scalar &z = new_grad.at<float>(y, x);
+            const float &z = new_grad.at<float>(y, x);
 
-            if (std::abs(z(0, 0)) < min_grad) continue;
+            if (std::abs(z) < min_grad) continue;
 
             const float depth = depthmap.at<float>(y, x);
 
@@ -309,7 +309,8 @@ void Mosaic::update(const cv::Mat &new_grad, const ros::Time &t0,
 
             // EKF Update Equations
             const cv::Matx12f dhdg = v.t();
-            const Scalar h = g.dot(v), nu = z - h, S = dhdg * P * dhdg.t() + R_;
+            const float h = g.dot(v), nu = z - h;
+            Scalar S = dhdg * P * dhdg.t() + R_;
             const cv::Matx21f W = P * dhdg.t() * S.inv();
 
             // Apply Update
