@@ -310,7 +310,7 @@ void Mosaic::update(const cv::Mat &new_grad, const ros::Time &t0,
             // EKF Update Equations
             const cv::Matx12f dhdg = v.t();
             const float h = g.dot(v), nu = z - h;
-            Scalar S = dhdg * P * dhdg.t() + R_;
+            const Scalar S = dhdg * P * dhdg.t() + R_;
             const cv::Matx21f W = P * dhdg.t() * S.inv();
 
             // Apply Update
