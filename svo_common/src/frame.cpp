@@ -69,7 +69,7 @@ void Frame::initFrame(const cv::Mat& img, size_t n_pyr_levels)
   else if (img.type() == CV_8UC3)
   {
     cv::Mat gray_image;
-    cv::cvtColor(img, gray_image, CV_BGR2GRAY);
+    cv::cvtColor(img, gray_image, cv::COLOR_BGR2GRAY);
     frame_utils::createImgPyramid(gray_image, n_pyr_levels, img_pyr_);
     original_color_image_ = img;
   }
