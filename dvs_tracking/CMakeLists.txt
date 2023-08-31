@@ -1,5 +1,7 @@
 project(dvs_tracking)
 cmake_minimum_required(VERSION 2.8.3)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(catkin_simple REQUIRED)
 catkin_simple(ALL_DEPS_REQUIRED)
@@ -13,8 +15,7 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 find_package(PCL 1.7 REQUIRED)
 include_directories(${PCL_INCLUDE_DIRS})
 
-
-
+find_package(Sophus REQUIRED)
 
 
 SET(CMAKE_BUILD_TYPE RelWithDebInfo) # Release, RelWithDebInfo)
@@ -61,6 +62,7 @@ cs_add_executable(dvs_tracking_ros src/dvs_tracking_ros.cpp)
 target_link_libraries(dvs_tracking_ros ${PROJECT_NAME}
   ${OpenCV_LIBS}
   ${PCL_LIBRARIES}
+  Sophus::Sophus
 )
 
 cs_add_library(dvs_tracking_nodelet src/dvs_tracking_nodelet.cpp)
